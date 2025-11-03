@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivra — Sign Up</title>
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/icon.svg" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo" onclick="window.location.href='index.html'">Nivra</h1>
+    </header>
+
+    <div class="login-card">
+      <h2>Join Nivra</h2>
+      <p class="subtitle">Start tracking your moods and find your calm.</p>
+
+      <form id="signupForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password" required />
+
+        <button type="submit" id="signupBtn">Sign Up</button>
+      </form>
+
+      <p class="switch-text">
+        Already have an account?
+        <a href="login.html">Log in here</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const signupForm = document.getElementById("signupForm");
+    const signupBtn = document.getElementById("signupBtn");
+
+    signupForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      signupBtn.disabled = true;
+      signupBtn.innerText = "Creating account...";
+      signupBtn.classList.add("loading");
+
+      setTimeout(() => {
+        window.location.href = "dashboard.html";
+      }, 1500);
+    });
+  </script>
+</body>
+</html>

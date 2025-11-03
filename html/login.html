@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivra — Login</title>
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/icon.svg" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo" onclick="window.location.href='index.html'">Nivra</h1>
+    </header>
+
+    <div class="login-card">
+      <h2>Welcome back!</h2>
+      <p class="subtitle">Log in to continue your journey with Nivra.</p>
+
+      <form id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••" required />
+
+        <button type="submit" id="loginBtn">Sign In</button>
+      </form>
+
+      <p class="switch-text">
+        Don’t have an account?
+        <a href="signup.html">Create one</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("loginForm");
+    const loginBtn = document.getElementById("loginBtn");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      loginBtn.disabled = true;
+      loginBtn.innerText = "Logging in...";
+      loginBtn.classList.add("loading");
+
+      setTimeout(() => {
+        window.location.href = "dashboard.html";
+      }, 1500);
+    });
+  </script>
+</body>
+</html>

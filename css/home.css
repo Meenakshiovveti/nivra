@@ -1,0 +1,212 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --dark-blue: #194569;
+  --blue: #5f84a2;
+  --light-blue: #91aec4;
+  --soft-blue: #b7d0e1;
+  --very-light: #dbecf4;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ================================
+   BODY AND LAYOUT
+================================ */
+body {
+  background: linear-gradient(160deg, var(--light-blue), var(--very-light));
+  color: var(--dark-blue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================================
+   HEADER / NAV
+================================ */
+header {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-blue);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--blue);
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-blue);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--blue);
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #2b4a63; /* darker blue for better readability */
+  font-size: 1.15rem;
+  font-weight: 400;
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+  text-shadow: 0 0.5px 0 #dbe4ee; /* subtle clarity effect */
+}
+
+
+/* ================================
+   BUTTONS (Login + Get Started)
+================================ */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.login-btn, .explore-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, var(--blue), var(--dark-blue));
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(95, 132, 162, 0.4);
+  transition: all 0.4s ease;
+}
+
+.login-btn:hover, .explore-btn:hover {
+  background: linear-gradient(135deg, var(--dark-blue), var(--blue));
+  box-shadow: 0 0 25px rgba(25, 69, 105, 0.6);
+  transform: translateY(-3px) scale(1.03);
+}
+
+/* subtle breathing effect */
+.login-btn, .explore-btn {
+  animation: breathe 3s infinite ease-in-out;
+}
+
+@keyframes breathe {
+  0% { box-shadow: 0 0 10px rgba(95, 132, 162, 0.4); }
+  50% { box-shadow: 0 0 25px rgba(95, 132, 162, 0.7); }
+  100% { box-shadow: 0 0 10px rgba(95, 132, 162, 0.4); }
+}
+
+/* ================================
+   FEATURE CARDS
+================================ */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  width: 280px;
+  height: 280px;
+  text-align: center;
+  padding: 25px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(25, 69, 105, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(25, 69, 105, 0.25);
+}
+
+.feature-card h3 {
+  font-size: 1.4rem;
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: var(--blue);
+  line-height: 1.6;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+  background: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .feature-card {
+    width: 90%;
+    height: auto;
+  }
+}

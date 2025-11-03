@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivra — Your Emotions, Understood</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/icon.svg" />
+
+  <!-- Home Page CSS -->
+  <link rel="stylesheet" href="../css/home.css" />
+</head>
+
+<body>
+  <!-- ===========================
+       HEADER / NAV
+  ============================ -->
+  <header>
+    <a href="index.html" class="logo">Nivra</a>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="#features">Features</a>
+    </nav>
+  </header>
+
+  <!-- ===========================
+       HERO SECTION
+  ============================ -->
+  <section class="hero">
+    <h1>Welcome to Nivra </h1>
+    <p>
+      Nivra is your mindful companion that helps you express your emotions,
+      reflect through journaling, and track your mood growth over time.
+      Designed to bring calm to your mind, balance to your heart, and clarity
+      to your day — one emotion at a time.
+    </p>
+
+    <div class="btn-container">
+      <a href="login.html" class="login-btn">Login</a>
+      <a href="signup.html" class="explore-btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- ===========================
+       FEATURES SECTION
+  ============================ -->
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3>Track Your Mood</h3>
+      <p>
+        Select your daily mood with simple icons. Nivra helps you visualize how
+        your emotions change over time using personalized charts.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Journal Freely</h3>
+      <p>
+        Write down your thoughts and experiences in a safe, private space.
+        Journaling helps you process your emotions and grow emotionally.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Watch Your Growth</h3>
+      <p>
+        With every entry, your mood plant grows — symbolizing your progress in
+        mindfulness and emotional awareness.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Secure & Private</h3>
+      <p>
+        Your reflections are for you only. Nivra respects your privacy and
+        keeps your journaling secure within your personal device.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===========================
+       FOOTER
+  ============================ -->
+  <footer>
+    <p>© 2025 Nivra. Designed for peace of mind and mindful living.</p>
+  </footer>
+
+  <!-- ===========================
+       OPTIONAL BUTTON ANIMATION SCRIPT
+  ============================ -->
+  <script>
+    const buttons = document.querySelectorAll('.login-btn, .explore-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.innerText = 'Loading...';
+        btn.style.transition = 'all 0.3s ease';
+        btn.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          btn.innerText = btn.classList.contains('login-btn') ? 'Login' : 'Get Started';
+          btn.style.transform = 'scale(1)';
+        }, 1200);
+      });
+    });
+  </script>
+</body>
+</html>
