@@ -16,8 +16,9 @@
     </header>
 
     <main class="dashboard-main">
-      <!-- Mood Selection -->
-      <section class="mood-section">
+
+      <!-- Mood Card -->
+      <section class="card mood-section">
         <h2>Select your mood</h2>
         <div class="mood-icons">
           <span onclick="selectMood('😢')">😢</span>
@@ -29,27 +30,25 @@
         <p id="selectedMoodText">How are you feeling today?</p>
       </section>
 
-      <!-- Journal Section -->
-      <section class="journal-section">
+      <!-- Journal Card -->
+      <section class="card journal-section">
         <h2>Journal your thoughts</h2>
         <textarea id="journalInput" placeholder="Write how you feel..."></textarea>
         <button id="saveEntryBtn" onclick="saveEntry()">Save Entry</button>
       </section>
 
-      <!-- Chart Section -->
-      <section class="chart-section">
+      <!-- Chart Card -->
+      <section class="card chart-section">
         <h2>Your Mood Trends</h2>
         <canvas id="moodChart" width="800" height="300"></canvas>
       </section>
     </main>
 
-    <!-- Streak Counter with Fire -->
-    <!-- Clean Streak Counter -->
-<div class="streak-counter-wrap">
-  <span class="streak-emoji">🔥</span>
-  <span class="streak-text">Streak: 1 days</span>
-</div>
-
+    <!-- Streak Counter -->
+    <div class="streak-counter-wrap">
+      <span class="streak-emoji">🔥</span>
+      <span class="streak-text">Streak: 1 days</span>
+    </div>
 
     <footer class="app-footer">
       <p>Made with care • Nivra</p>
