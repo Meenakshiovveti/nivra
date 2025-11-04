@@ -63,6 +63,11 @@ The dark theme gives a calm, nighttime journaling experience.
 
 ![Dark Mode](assets/screenshots/darkmode.png)
 
+### icon 
+The Nivra logo — a heart with a scanning line — symbolizes emotional awareness and reflection
+
+![logo](assets/screenshots/icon.png)
+
 ---
 
 ## 🌈 Key Features  
