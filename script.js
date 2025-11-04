@@ -248,6 +248,19 @@
       }
     });
 
+    // Make chart brighter in dark mode
+if (document.body.classList.contains("dark-mode")) {
+  chart.options.scales.x.ticks.color = "#ffffff";
+  chart.options.scales.y.ticks.color = "#ffffff";
+  chart.options.scales.x.grid.color = "rgba(255, 255, 255, 0.1)";
+  chart.options.scales.y.grid.color = "rgba(255, 255, 255, 0.1)";
+  chart.data.datasets[0].borderColor = "rgba(120, 190, 255, 0.9)";
+  chart.data.datasets[0].backgroundColor = "rgba(120, 190, 255, 0.2)";
+  chart.options.plugins.legend.labels.color = "#ffffff";
+  chart.update();
+}
+
+
     // ensure canvas fills wrapper height
     if (chartWrapper) {
       // try to set canvas parent height so maintainAspectRatio:false uses it
@@ -593,9 +606,11 @@
   /* -------------------------
      Boot sequence
      ------------------------- */
+
   function boot() {
     // small inline layout fixes to avoid needing CSS overrides
     applyInlineLayoutTweaks();
+    
 
     // wire UI
     wireMoodSelection();
@@ -697,3 +712,42 @@
     }
   }
 })();
+// === Make Chart.js visible in dark mode ===
+const applyDarkChartTheme = () => {
+  if (document.body.classList.contains("dark-mode")) {
+    Chart.defaults.color = "#ffffff"; // makes text white
+    Chart.defaults.borderColor = "rgba(255, 255, 255, 0.2)";
+  } else {
+    Chart.defaults.color = "#1e3a5f";
+    Chart.defaults.borderColor = "rgba(0, 0, 0, 0.1)";
+  }
+
+  // Re-render chart after theme toggle (if chart already exists)
+  if (window.moodChart) {
+    window.moodChart.update();
+  }
+};
+
+// Run once on page load
+applyDarkChartTheme();
+
+// And run every time theme is toggled
+const themeToggle = document.getElementById("themeToggle");
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    setTimeout(applyDarkChartTheme, 300);
+  });
+}
+
+// Make chart brighter in dark mode
+if (document.body.classList.contains("dark-mode")) {
+  Chart.defaults.color = "#ffffff"; // makes chart text white
+  Chart.defaults.borderColor = "rgba(255, 255, 255, 0.2)";
+
+  // update your existing chart colors
+  if (window.moodChart) {
+    window.moodChart.data.datasets[0].borderColor = "rgba(120, 190, 255, 0.9)"; // brighter line
+    window.moodChart.data.datasets[0].backgroundColor = "rgba(120, 190, 255, 0.2)"; // light fill
+    window.moodChart.update();
+  }
+}

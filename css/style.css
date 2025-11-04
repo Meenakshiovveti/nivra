@@ -315,3 +315,93 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.theme-toggle {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(25, 69, 105, 0.15);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.7);
+}
+body.dark-mode {
+  background: linear-gradient(180deg, #0e1e2e, #1b2e3f);
+  color: #e6eef5;
+}
+
+body.dark-mode .card,
+body.dark-mode .dashboard-container {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode p {
+  color: #e6eef5;
+}
+
+body.dark-mode .app-footer {
+  color: #c8d6e5;
+}
+/* ===============================
+   DARK THEME — Enhanced Palette
+================================= */
+body.dark-mode {
+  background: linear-gradient(180deg, #0f1f2e, #1a2e42);
+  color: #e9f1f7;
+}
+
+body.dark-mode .dashboard-container {
+  background: rgba(30, 45, 60, 0.85);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+body.dark-mode .card {
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode h2,
+body.dark-mode h1,
+body.dark-mode p,
+body.dark-mode .streak-text {
+  color: #e9f1f7;
+}
+
+/* Mood message fix */
+body.dark-mode #selectedMoodText {
+  color: #ffffff !important;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons look sleeker */
+body.dark-mode #saveEntryBtn {
+  background: linear-gradient(90deg, #4f89b5, #285377);
+  box-shadow: 0 0 12px rgba(80, 160, 220, 0.3);
+}
+
+body.dark-mode #saveEntryBtn:hover {
+  background: linear-gradient(90deg, #285377, #4f89b5);
+}
+
+/* Chart card improvement */
+body.dark-mode canvas {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Subtle glow around emojis */
+body.dark-mode .mood-icons span {
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
+}
