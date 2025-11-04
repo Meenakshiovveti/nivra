@@ -80,11 +80,11 @@ The dark theme gives a calm, nighttime journaling experience.
 ## ⚙️ How to Run Locally  
 
 1. Clone the Repository
-  git clone https://github.com/Meenakshiovveti/nivra.git
-2.Open the Project Folder
-  cd nivra
+    git clone https://github.com/Meenakshiovveti/nivra.git
+2. Open the Project Folder
+    cd nivra
 3. Launch the App
-  Open the html/index.html file in your browser (no server needed).
+    Open the html/index.html file in your browser (no server needed).
 4. Explore the web application — your moods and journals are saved automatically in your browser.
 
 ---
