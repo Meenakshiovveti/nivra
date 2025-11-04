@@ -41,6 +41,30 @@ Nivra helps users:
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+The welcoming landing page introducing **Nivra** and its calming design.
+
+![Home Page](assets/screenshots/home.png)
+
+### 🔐 Login 
+Simple and clean authentication pages with smooth transitions.
+
+![Login Page](assets/screenshots/login.png)
+
+### 📊 Dashboard
+Tracks moods, shows journal entries, and displays mood trends over time.
+
+![Dashboard](assets/screenshots/dashboard.png)
+
+### 🖤 Dark Mode
+The dark theme gives a calm, nighttime journaling experience.
+
+![Dark Mode](assets/screenshots/darkmode.png)
+
+---
+
 ## 🌈 Key Features  
 
 - **Mood Selection:** Choose from five expressive emojis to log your daily emotion.  
@@ -63,6 +87,8 @@ Nivra helps users:
   Open the html/index.html file in your browser (no server needed).
 4. Explore the web application — your moods and journals are saved automatically in your browser.
 
+---
+
 ## 🌙 Themes
 
 1.Light Mode — Soft pastel gradient background with calm blue accents.
@@ -71,16 +97,21 @@ Nivra helps users:
 
 The theme automatically adjusts charts and text for perfect visibility in both modes.
 
+---
+
 ## 🧠 Purpose
 
 Nivra was created to make mental health journaling simple and beautiful.
 It encourages users to check in with their emotions daily, offering clarity, reflection, and a sense of growth.
 Every mood you log and journal you write is a step toward emotional balance 🌼
 
+---
+
 ## 💖 Logo Meaning
 The Nivra logo features a heart with a gentle scanner  — symbolizing emotional awareness and the balance between mind and heart.  
 It reflects the core purpose of **Nivra**: to help users tune in to their feelings, track their moods, and take care of their mental wellness with calm and clarity.
 
+---
 
 ## 👩‍💻 Author
 
@@ -91,6 +122,8 @@ Meenakshi Ovveti
 Frontend Developer & Designer of Nivra
 
 Built for novathon 2025 under the theme Mental Wellness through Tech
+
+---
 
 ## 📜 License
 
