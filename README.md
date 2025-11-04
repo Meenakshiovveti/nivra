@@ -1,4 +1,4 @@
-# 🌿 Nivra — Your Emotions, Understood  
+#  Nivra — Your Emotions, Understood  
 
 Nivra is a **mental wellness companion web app** designed to help users understand, reflect on, and track their emotions in a calm, friendly space.  
 Built with empathy and simplicity in mind, Nivra lets users record their moods, write their thoughts, and visualize emotional trends over time — all while maintaining a clean and peaceful aesthetic.  
@@ -76,6 +76,11 @@ The theme automatically adjusts charts and text for perfect visibility in both m
 Nivra was created to make mental health journaling simple and beautiful.
 It encourages users to check in with their emotions daily, offering clarity, reflection, and a sense of growth.
 Every mood you log and journal you write is a step toward emotional balance 🌼
+
+## 💖 Logo Meaning
+The Nivra logo features a heart with a gentle scanner  — symbolizing emotional awareness and the balance between mind and heart.  
+It reflects the core purpose of **Nivra**: to help users tune in to their feelings, track their moods, and take care of their mental wellness with calm and clarity.
+
 
 ## 👩‍💻 Author
 
