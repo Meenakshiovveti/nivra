@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivra — Profile</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <h1 class="app-title" onclick="window.location.href='dashboard.html'">Nivra</h1>
+      <p class="app-subtitle">Your emotions, understood.</p>
+    </header>
+
+    <main class="dashboard-main">
+      <section class="card">
+        <h2>Your Profile</h2>
+        <p><strong>Name:</strong> <span id="profileName">Maya Celeste</span></p>
+        <p><strong>Email:</strong> <span id="profileEmail">you@example.com</span></p>
+        <p><strong>Current Streak:</strong> <span id="profileStreak">0</span> days 🔥</p>
+      </section>
+
+      <section class="card">
+        <h2>Quick Links</h2>
+        <button onclick="window.location.href='dashboard.html'">Go to Dashboard</button>
+        <button onclick="logout()">Log Out</button>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p>Made with care • Nivra</p>
+    </footer>
+  </div>
+
+  <script>
+    // Load saved streak
+    const streak = localStorage.getItem("nivra_streak") || 0;
+    document.getElementById("profileStreak").textContent = streak;
+
+    // Dummy profile data (in real project: fetched from user auth)
+    document.getElementById("profileName").textContent = localStorage.getItem("user_name") || "User";
+    document.getElementById("profileEmail").textContent = localStorage.getItem("user_email") || "you@example.com";
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
