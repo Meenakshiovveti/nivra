@@ -66,6 +66,7 @@ Nivra helps users:
 ## 🌙 Themes
 
 1.Light Mode — Soft pastel gradient background with calm blue accents.
+
 2.Dark Mode — Deep navy tones with gentle white highlights for focus and comfort.
 
 The theme automatically adjusts charts and text for perfect visibility in both modes.
