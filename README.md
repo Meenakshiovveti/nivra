@@ -63,25 +63,25 @@ Nivra helps users:
   Open the html/index.html file in your browser (no server needed).
 4. Explore the web application — your moods and journals are saved automatically in your browser.
 
-🌙 Themes
+## 🌙 Themes
 
 1.Light Mode — Soft pastel gradient background with calm blue accents.
 2.Dark Mode — Deep navy tones with gentle white highlights for focus and comfort.
 
 The theme automatically adjusts charts and text for perfect visibility in both modes.
 
-🧠 Purpose
+## 🧠 Purpose
 
 Nivra was created to make mental health journaling simple and beautiful.
 It encourages users to check in with their emotions daily, offering clarity, reflection, and a sense of growth.
 Every mood you log and journal you write is a step toward emotional balance 🌼
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Meenakshi Ovveti
 Frontend Developer & Designer of Nivra
 Built for novathon 2025 under the theme Mental Wellness through Tech
 
-📜 License
+## 📜 License
 
 This project is open-source and available under the MIT License.
