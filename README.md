@@ -85,8 +85,11 @@ It reflects the core purpose of **Nivra**: to help users tune in to their feelin
 ## 👩‍💻 Author
 
 Meenakshi Ovveti
+
 1st year ECE 
+
 Frontend Developer & Designer of Nivra
+
 Built for novathon 2025 under the theme Mental Wellness through Tech
 
 ## 📜 License
